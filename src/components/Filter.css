@@ -1,0 +1,82 @@
+.filter-container{
+    margin: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 3px;
+    width: 450px;
+    box-shadow: 0px 0px 5px 1.5px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+}
+
+.search .search-icon{
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.search input{
+    width: 90%;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 7px;
+    background: transparent;
+}
+
+.filter-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    background: white;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 1.5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.filter-accordion {
+    position: absolute;
+    width: 200px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px 1.5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+    opacity: 0;
+    background: white;
+    overflow: hidden;
+    max-height: 0; 
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.region {
+    padding: 8px 10px;
+    z-index: 1;
+}
+
+.region:hover {
+    background-color: var(--very-light-gray);
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+    animation: accordion 0.5s ease-in-out forwards;
+}
+
+@keyframes accordion {
+    0% {
+        max-height: 0;
+        opacity: 0;
+    }
+    100% {
+        max-height: 500px;
+        opacity: 1;
+    }
+}

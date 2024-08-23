@@ -1,0 +1,27 @@
+nav{
+    width: 100%;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    
+    h2{
+        font-weight: 800;
+    }
+}
+
+.theme{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+
+    p{
+        font-weight: 500;
+    }
+}
